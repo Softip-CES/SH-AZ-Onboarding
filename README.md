@@ -8,7 +8,7 @@ Bash script to create App registration with federated credential that establishe
 We recommend running this script directly in portal UI, where you are automatically logged in with ***az cli***. Person running this script need to have required RBAC on the scope of subscription or resource group (Owner, User Access Administrator). These roles are nessesary to assign roles to the service principal that is created.
 
 ## Running script
-Copy the script to the cloud shell and run: \
+Copy the script to the cloud shell and run: 
 
 `chmod u+x onboarding.sh` \
 `./onboarding.sh -n {app_name} -s {scope}`
