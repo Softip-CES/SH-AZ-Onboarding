@@ -68,11 +68,11 @@ az role assignment create --assignee $objectId \
 info "Error: Failed to create role assignemnt at a $scope." "Role assignment User Access Administrator created at $scope."
 
 # Output app id, tenant id and objectId
-echo -e "\n\n\nCopy this and send it to the responsible person"
+echo -e "\n\n\nCopy this and send it to the responsible person\n"
 echo "###################################################"
 echo "appId: $appId"
 echo "tenantId: $tenantId"
 echo "subscription: $sub_capture"
 echo "resourceGroup: $rg_capture"
 echo "###################################################"
-echo -e "Copy this and send it to the responsible person.\n\n\n"
+echo -e "\nCopy this and send it to the responsible person.\n\n\n"
