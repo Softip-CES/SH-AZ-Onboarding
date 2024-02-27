@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Get input parametes based on tags
+# Get input parametes based on flags
 while getopts "n:s:" flag; do
     case "${flag}" in
         n) app_name=${OPTARG};;
