@@ -11,13 +11,13 @@ We recommend running this script directly in portal UI, where you are automatica
 Copy the script to the cloud shell and run: 
 
 ```bash
-chmod u+x onboarding.sh` # adding execute permission for the user
+chmod u+x onboarding.sh # adding execute permission for the user
 ```
 ```bash
-./onboarding.sh -n {app_name} -s {scope}` # executing script with provided values
+./onboarding.sh -n {app_name} -s {scope} # executing script with provided values
 ```
 ***app_name*** - is the name of Application that will be created in Azure AD. Service principal will be created with the same name. \
-***scope*** -  is the scope for creating role assignment (either on subscription or resource group based on the decision) in the form:
+***scope*** -  is the scope for creating role assignment (either on subscription or resource group) in the form:
 
 - /subscriptions/{subscriptionId} 
   
