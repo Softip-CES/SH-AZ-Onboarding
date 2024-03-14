@@ -70,9 +70,9 @@ info "Error: Failed to create role assignemnt at a $scope." "Role assignment Use
 # Output app id, tenant id and objectId
 echo -e "\n\n\nCopy this and send it to the responsible person\n"
 echo "###################################################"
-echo "appId: $appId"
-echo "tenantId: $tenantId"
-echo "subscription: $sub_capture"
+echo "client_id: $appId"
+echo "tenant_id: $tenantId"
+echo "subscription_id: $sub_capture"
 echo "resourceGroup: $rg_capture"
 echo "###################################################"
 echo -e "\nCopy this and send it to the responsible person.\n\n\n"
