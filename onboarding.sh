@@ -20,7 +20,7 @@ pattern_rg="/subscriptions/[a-fA-F0-9-]+/resourceGroups/[a-zA-Z0-9_.()-]+[^/.]$"
 
 # Validate right format for scope
 if [[  $scope =~ $pattern_sub ||  $scope =~ $pattern_rg ]]; then
-    IFS='/' read -ra parts <<< "$scope" 
+    IFS='/' read -ra parts <<< "$scope"
     sub_capture="${parts[2]}" # capture subscription id
     rg_capture="${parts[4]:-NoResourceGroup}" # if resource group is not provided, set it to "NoResourceGroup"
 else
