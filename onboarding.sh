@@ -52,7 +52,7 @@ info "Error: Failed to create Service principal for AD app." "Azure Service prin
 
 # Create federated credential for appplication
 az ad app federated-credential create --id $appId \
-    --parameters '{"name": "gh-token-softip-ces-tf-az-centrallog","issuer": "https://token.actions.githubusercontent.com/","subject": "repo:Softip-CES/TF-AZ-CentralLog:ref:refs/heads/main","description": "Federated credential for Softip-CES/TF-AZ-CentralLog repository","audiences": ["api://AzureADTokenExchange"]}' > /dev/null 2>&1
+    --parameters '{"name": "gh-token-softip-ces-tf-az-centrallog","issuer": "https://token.actions.githubusercontent.com","subject": "repo:Softip-CES/TF-AZ-CentralLog:ref:refs/heads/main","description": "Federated credential for Softip-CES/TF-AZ-CentralLog repository","audiences": ["api://AzureADTokenExchange"]}' > /dev/null 2>&1
 info "Error: Failed to create Federated credential for Application: $appId" "Federated credential for Application: $appId created successfully."
 
 # Create role assignment "Contributor" for specified scope
